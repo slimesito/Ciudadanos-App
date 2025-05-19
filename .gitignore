@@ -1,0 +1,70 @@
+# -------------------
+# Archivos del sistema
+# -------------------
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+~$*
+
+# -------------------
+# Backend (Laravel)
+# -------------------
+Ciudadanos-API/.env
+Ciudadanos-API/.env.*
+Ciudadanos-API/.phpunit.cache
+Ciudadanos-API/storage/*.key
+Ciudadanos-API/public/storage
+Ciudadanos-API/storage/framework/*
+Ciudadanos-API/storage/logs/*
+Ciudadanos-API/public/hot
+Ciudadanos-API/public/build
+Ciudadanos-API/vendor/
+Ciudadanos-API/node_modules/
+Ciudadanos-API/composer.lock
+Ciudadanos-API/npm-debug.log
+Ciudadanos-API/yarn-error.log
+Ciudadanos-API/.phpunit.result.cache
+Ciudadanos-API/Homestead.json
+Ciudadanos-API/Homestead.yaml
+Ciudadanos-API/auth.json
+
+# -------------------
+# Frontend (React)
+# -------------------
+Frontend/.env
+Frontend/.env.*
+Frontend/node_modules/
+Frontend/.next/
+Frontend/out/
+Frontend/build/
+Frontend/dist/
+Frontend/dist-ssr/
+Frontend/.eslintcache
+Frontend/*.local
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/pnpm-debug.log*
+Frontend/lerna-debug.log*
+
+# -------------------
+# Entornos de desarrollo/IDEs
+# -------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.fleet/
+.settings/
+*.code-workspace
+
+# -------------------
+# Logs y reportes
+# -------------------
+logs/
+*.log
