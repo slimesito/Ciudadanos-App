@@ -7,34 +7,34 @@
 ![Responsive UI](https://img.shields.io/badge/Responsive-Yes-success.svg)
 ![Dark/Light Mode](https://img.shields.io/badge/Theme-Dark%20%2F%20Light-informational.svg)
 
-> Aplicación web para el registro, consulta y actualización de Ciudadanos en una base de datos PostgreSQL.  
-> Originalmente desarrollada para el Instituto Venezolano de los Seguros Sociales IVSS en Oracle, esta versión ha sido adaptada con una nueva estructura para PostgreSQL.
+> Web application for registering, querying, and updating citizens in a PostgreSQL database.  
+> Originally developed for the Venezuelan Institute of Social Security (IVSS) using Oracle, this version has been adapted with a new structure for PostgreSQL.
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```bash
 Ciudadanos/
-├── Ciudadanos-API/       # Backend en Laravel 10
-│   ├── app/              # Lógica de la aplicación
-│   ├── config/           # Configuraciones
-│   └── routes/           # Definición de endpoints
+├── Ciudadanos-API/       # Laravel 10 Backend
+│   ├── app/              # Application logic
+│   ├── config/           # Configuration files
+│   └── routes/           # API route definitions
 │
-└── Frontend/             # Frontend en React.js
-    ├── public/           # Assets estáticos
-    ├── src/              # Código fuente
-    └── package.json      # Dependencias
+└── Frontend/             # React.js Frontend
+    ├── public/           # Static assets
+    ├── src/              # Source code
+    └── package.json      # Dependencies
 ```
 
 ---
 
-## ⚙️ Tecnologías Usadas
+## ⚙️ Technologies Used
 
-- **Laravel 10** – API RESTful para manejar operaciones CRUD de ciudadanos.
-- **React.js 19.1** – Interfaz moderna y rápida para interacción del usuario.
-- **Tailwind CSS 4.1.7** – Estilización con soporte responsive y modo oscuro/claro.
-- **PostgreSQL** – Motor de base de datos robusto y escalable.
+- **Laravel 10** – RESTful API for handling CRUD operations on citizens.
+- **React.js 19.1** – Modern and fast UI for user interaction.
+- **Tailwind CSS 4.1.7** – Styling with responsive support and dark/light theme.
+- **PostgreSQL** – Robust and scalable database engine.
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -43,60 +43,54 @@ Ciudadanos/
 
 ---
 
-## 🧑‍💻 Funcionalidades
+## 🧑‍💻 Features
 
-✅ Registrar nuevos ciudadanos  
-✅ Consultar listado de ciudadanos  
-✅ Actualizar datos de un ciudadano  
-✅ Interfaz responsive con adaptación a tema oscuro y claro  
-✅ Integración full entre Frontend y Backend mediante API REST  
-✅ Rate Limiting para protección contra abuso mediante límites de solicitudes
+✅ Register new citizens  
+✅ View citizen information  
+✅ Update citizen information  
+✅ Responsive interface with dark and light mode support  
+✅ Full integration between frontend and backend via REST API  
+✅ Rate Limiting to protect against abuse via request limits
 
 ---
 
-## 📸 Capturas de Pantalla
+## 📸 Screenshots
 
-<p><em>Vista previa de las principales pantallas de la aplicación:</em></p>
+<p><em>Preview of the main screens of the application:</em></p>
 
-<!-- Página de Inicio -->
-<p><strong>📋 Página de Inicio</strong></p>
+<p><strong>📋 Home Page</strong></p>
 <p align="center">
-  <img src="./screenshots/home.jpg" alt="Página de Inicio" width="80%">
+  <img src="./screenshots/home.jpg" alt="Home Page" width="80%">
 </p>
 
-<!-- Registro de Ciudadano -->
-<p><strong>➕ Registro de Ciudadano</strong></p>
+<p><strong>➕ Citizen Registration</strong></p>
 <p align="center">
-  <img src="./screenshots/registro.jpg" alt="Formulario de Registro" width="70%">
+  <img src="./screenshots/registro.jpg" alt="Citizen Registration" width="70%">
 </p>
 
-<!-- Detalle de Ciudadano -->
-<p><strong>📄 Detalle de Ciudadano</strong></p>
+<p><strong>📄 Citizen Details</strong></p>
 <p align="center">
-  <img src="./screenshots/detalle.jpg" alt="Detalle de Ciudadano" width="70%">
+  <img src="./screenshots/detalle.jpg" alt="Citizen Details" width="70%">
 </p>
 
-<!-- Actualizar Ciudadano -->
-<p><strong>🔄 Actualizar Ciudadano</strong></p>
+<p><strong>🔄 Update Citizen</strong></p>
 <p align="center">
-  <img src="./screenshots/actualizar.jpg" alt="Formulario de Actualización" width="70%">
+  <img src="./screenshots/actualizar.jpg" alt="Update Citizen" width="70%">
 </p>
 
-<!-- Rate Limiting Error -->
-<p><strong>⛔ Error de Rate Limiting</strong></p>
+<p><strong>⛔ Rate Limiting Error</strong></p>
 <p align="center">
   <img src="./screenshots/rate-limiting-error.jpg" alt="Rate Limiting Error" width="70%">
 </p>
 
-<!-- Modo Claro -->
-<p><strong>🛠️ Modo Claro</strong></p>
+<p><strong>☀ Light Mode</strong></p>
 <p align="center">
-  <img src="./screenshots/home-light-mode.jpg" alt="Modo Claro" width="80%">
+  <img src="./screenshots/home-light-mode.jpg" alt="Light Mode" width="80%">
 </p>
 
 ---
 
-## 🚀 Instalación y Ejecución
+## 🚀 Installation & Running
 
 ### 🔧 Backend (Laravel)
 
@@ -117,46 +111,47 @@ npm install
 npm run dev
 ```
 
-> Asegúrate de que el archivo `.env` del backend tenga configurada la conexión a tu base de datos PostgreSQL.
+> Make sure the backend .env file is configured with your PostgreSQL database connection.
 
 ---
 
 ## 📡 API Endpoints
 
-| Método | Ruta                 | Descripción              |
+| Method | Route                | Description              |
 |--------|----------------------|--------------------------|
-| GET    | /api/ciudadanos      | Obtener todos los ciudadanos |
-| GET    | /api/ciudadanos/buscar | Buscar ciudadano por Nacionalidad + Cédula |
-| POST   | /api/ciudadanos      | Registrar ciudadano   |
-| PATCH  | /api/ciudadanos/{ciudadano} | Actualizar ciudadano  |
+| GET    | /api/ciudadanos      | Get all citizens |
+| GET    | /api/ciudadanos/buscar | Search citizen by Nationality + ID Number |
+| POST   | /api/ciudadanos      | Register a new citizen   |
+| PATCH  | /api/ciudadanos/{ciudadano} | Update citizen  |
 
 ---
 
-## 🧪 Pruebas
+## 🧪 Testing
 
-El sistema incluye tests para verificar los Endpoints y el rate limiting:
+The system includes tests to verify endpoints and rate limiting:
 
 ```bash
 php artisan test
 ```
-Casos de prueba verificados:
+Verified test cases:
 
-✅ Listar Ciudadano  
-✅ Búsqueda de Ciudadano por Número de Cédula y Nacionalidad  
-✅ Registro de Ciudadano  
-✅ Actualización de Ciudadano  
-✅ Límite de solicitudes permitidas  
-✅ Bloqueo después de exceder el límite  
-✅ Restablecimiento después del período  
-
----
-
-## 📄 Licencia
-
-Este proyecto es una réplica con fines de prueba y de portafolio. No debe utilizarse con fines comerciales sin autorización.
+✅ List citizens  
+✅ Search citizen by ID number and nationality  
+✅ Register new citizen  
+✅ Update citizen  
+✅ Request limit enforcement  
+✅ Blocking after exceeding request limit  
+✅ Reset after cooldown period  
 
 ---
 
-## 🙋‍♂️ Autor
+## 📄 License
 
-Desarrollado por [William Villegas](https://www.linkedin.com/in/william-villegas-ab3b94215/)
+This project is a replica intended for testing and portfolio purposes.
+It should not be used for commercial purposes without permission.
+
+---
+
+## 🙋‍♂️ Author
+
+Developed by [William Villegas](https://www.linkedin.com/in/william-villegas-ab3b94215/)
