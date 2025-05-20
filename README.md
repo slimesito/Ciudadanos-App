@@ -50,7 +50,7 @@ Ciudadanos/
 ✅ Actualizar datos de un ciudadano  
 ✅ Interfaz responsive con adaptación a tema oscuro y claro  
 ✅ Integración full entre Frontend y Backend mediante API REST
-✅ Rate Limiting para limitar las consultas y operaciones dentro de la Aplicación
+✅ Rate Limiting para protección contra abuso mediante límites de solicitudes
 
 ---
 
@@ -134,7 +134,20 @@ npm run dev
 
 ## 🧪 Pruebas
 
-> *(Si implementaste pruebas, aquí puedes detallar cómo ejecutarlas. Si no, te recomiendo agregarlas con Pest o PHPUnit para Laravel, y Vitest o Jest para React.)*
+El sistema incluye tests para verificar los Endpoints y el rate limiting:
+
+```bash
+php artisan test
+```
+Casos de prueba verificados:
+
+✅ Listar Ciudadano  
+✅ Búsqueda de Ciudadano por Número de Cédula y Nacionalidad  
+✅ Registro de Ciudadano  
+✅ Actualización de Ciudadano  
+✅ Límite de solicitudes permitidas  
+✅ Bloqueo después de exceder el límite  
+✅ Restablecimiento después del período  
 
 ---
 
