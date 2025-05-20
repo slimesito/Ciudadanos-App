@@ -70,7 +70,7 @@ Ciudadanos/
 
 <p><strong>📄 Citizen Details</strong></p>
 <p align="center">
-  <img src="./screenshots/detalle.jpg" alt="Citizen Details" width="70%">
+  <img src="./screenshots/citizen-detail.jpg" alt="Citizen Details" width="70%">
 </p>
 
 <p><strong>🔄 Update Citizen</strong></p>
