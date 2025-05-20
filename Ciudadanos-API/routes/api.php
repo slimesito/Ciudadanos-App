@@ -4,6 +4,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\CiudadanoController;
 
-Route::get('ciudadanos/buscar', [CiudadanoController::class, 'buscar']);
+// Ruta de búsqueda con rate limiting (60 solicitudes por minuto)
+Route::get('ciudadanos/buscar', [CiudadanoController::class, 'buscar'])
+	->middleware('throttle:busqueda');
 
-Route::apiResource('ciudadanos', CiudadanoController::class)->except(['destroy']);
+// Rutas del recurso con rate limiting
+Route::apiResource('ciudadanos', CiudadanoController::class)
+    ->except(['destroy'])
+    ->middleware('throttle:api');

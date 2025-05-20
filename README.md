@@ -50,6 +50,7 @@ Ciudadanos/
 ✅ Actualizar datos de un ciudadano  
 ✅ Interfaz responsive con adaptación a tema oscuro y claro  
 ✅ Integración full entre Frontend y Backend mediante API REST
+✅ Rate Limiting para limitar las consultas y operaciones dentro de la Aplicación
 
 ---
 
@@ -79,6 +80,12 @@ Ciudadanos/
 <p><strong>🔄 Actualizar Ciudadano</strong></p>
 <p align="center">
   <img src="./screenshots/actualizar.jpg" alt="Formulario de Actualización" width="70%">
+</p>
+
+<!-- Rate Limiting Error -->
+<p><strong>⛔ Error de Rate Limiting</strong></p>
+<p align="center">
+  <img src="./screenshots/rate-limiting-error.jpg" alt="Rate Limiting Error" width="70%">
 </p>
 
 <!-- Modo Claro -->
