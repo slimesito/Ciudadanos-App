@@ -49,7 +49,7 @@ Ciudadanos/
 ✅ Consultar listado de ciudadanos  
 ✅ Actualizar datos de un ciudadano  
 ✅ Interfaz responsive con adaptación a tema oscuro y claro  
-✅ Integración full entre Frontend y Backend mediante API REST
+✅ Integración full entre Frontend y Backend mediante API REST  
 ✅ Rate Limiting para protección contra abuso mediante límites de solicitudes
 
 ---
