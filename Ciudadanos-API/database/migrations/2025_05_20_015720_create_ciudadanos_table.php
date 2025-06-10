@@ -8,7 +8,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('ciudadanos', function (Blueprint $table) {
-            $table->id(); // id autoincremental
+            $table->id();
             $table->string('cedula')->unique();
             $table->string('nombres');
             $table->string('apellidos');
